@@ -1,0 +1,543 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f8fc;
+    color: #172b4d;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.home-header {
+    width: 100%;
+    min-height: 85px;
+    background: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px 45px;
+
+    border-bottom: 1px solid #dfe5ec;
+}
+
+.home-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.home-logo {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 40px;
+}
+
+.home-brand h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #172b4d;
+}
+
+.home-brand p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #666;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.home-nav {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.home-nav a {
+    color: #172b4d;
+    font-size: 15px;
+}
+
+.home-nav a:hover {
+    color: #1976d2;
+}
+
+.sign-button {
+    border: 1px solid #777;
+    padding: 10px 19px;
+    border-radius: 7px;
+    color: #172b4d !important;
+}
+
+.sign-button:hover {
+    background: #f1f5f9;
+    color: #1976d2 !important;
+}
+
+
+/* =====================================================
+   MAIN
+===================================================== */
+
+.home-main {
+    width: 100%;
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 45px 25px 55px;
+
+    text-align: center;
+}
+
+.home-welcome {
+    margin: 0 0 12px;
+
+    font-size: 21px;
+    font-weight: bold;
+
+    color: #172b4d;
+}
+
+.home-title {
+    margin: 0;
+
+    font-size: 38px;
+    line-height: 1.25;
+
+    color: #172b4d;
+}
+
+.home-subtitle {
+    margin: 14px 0 45px;
+
+    font-size: 20px;
+
+    color: #555;
+}
+
+
+/* =====================================================
+   PORTAL CARDS
+===================================================== */
+
+.portal-container {
+    width: 100%;
+    max-width: 1050px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+}
+
+.portal-card {
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.14);
+
+    transition: 0.2s ease;
+}
+
+.portal-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 9px 22px rgba(0, 0, 0, 0.18);
+}
+
+
+/* =====================================================
+   PORTAL HEADINGS
+===================================================== */
+
+.portal-heading {
+    padding: 15px;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+.student-portal .portal-heading {
+    background: #1976d2;
+}
+
+.staff-portal .portal-heading {
+    background: #43a047;
+}
+
+
+/* =====================================================
+   PORTAL BODY
+===================================================== */
+
+.portal-body {
+    padding: 27px 25px 30px;
+}
+
+.portal-icon {
+    font-size: 65px;
+
+    margin-bottom: 10px;
+}
+
+.portal-body h2 {
+    margin: 5px 0 12px;
+
+    font-size: 22px;
+
+    color: #172b4d;
+}
+
+.portal-body p {
+    max-width: 430px;
+
+    min-height: 45px;
+
+    margin: 0 auto 25px;
+
+    line-height: 1.5;
+
+    color: #555;
+}
+
+
+/* =====================================================
+   PORTAL LOGIN BUTTONS
+===================================================== */
+
+.portal-login {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border-radius: 6px;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+.student-login {
+    background: #1976d2;
+}
+
+.staff-login {
+    background: #43a047;
+}
+
+.portal-login:hover {
+    opacity: 0.9;
+}
+
+
+/* =====================================================
+   QUICK STATUS
+===================================================== */
+
+.quick-status {
+    margin-top: 40px;
+}
+
+.quick-status h2 {
+    margin: 0 0 8px;
+
+    font-size: 23px;
+
+    color: #172b4d;
+}
+
+.quick-status p {
+    margin: 0 0 18px;
+
+    color: #666;
+}
+
+.quick-status form {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.quick-status input {
+    width: 310px;
+
+    padding: 12px;
+
+    border: 1px solid #bbb;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+.quick-status input:focus {
+    border-color: #1976d2;
+}
+
+.quick-status button {
+    padding: 12px 22px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #1976d2;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.quick-status button:hover {
+    background: #125ca5;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.home-footer {
+    position: relative;
+
+    min-height: 70px;
+
+    background: white;
+
+    border-top: 1px solid #ddd;
+
+    padding: 20px 45px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+.footer-left {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+.footer-left a {
+    color: #555;
+}
+
+.footer-left a:hover {
+    color: #1976d2;
+}
+
+.home-footer p {
+    margin: 0;
+}
+
+
+/* =====================================================
+   ADMIN LOGIN
+   Small Red Filled Button
+===================================================== */
+
+.hidden-admin {
+    position: absolute;
+
+    right: 25px;
+    bottom: 10px;
+
+    background: #dc2626;
+
+    color: white !important;
+
+    padding: 7px 13px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+    opacity: 1;
+
+    box-shadow:
+        0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.hidden-admin:hover {
+    background: #b91c1c;
+
+    color: white !important;
+}
+
+
+/* =====================================================
+   MOBILE / TABLET
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .home-header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 15px;
+    }
+
+    .home-nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px;
+    }
+
+    .home-main {
+        padding: 35px 18px 45px;
+    }
+
+    .home-title {
+        font-size: 30px;
+    }
+
+    .portal-container {
+        grid-template-columns: 1fr;
+
+        max-width: 550px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 500px) {
+
+    .home-brand h2 {
+        font-size: 21px;
+    }
+
+    .home-brand p {
+        font-size: 12px;
+    }
+
+    .home-title {
+        font-size: 25px;
+    }
+
+    .home-welcome {
+        font-size: 18px;
+    }
+
+    .home-subtitle {
+        font-size: 17px;
+
+        margin-bottom: 35px;
+    }
+
+    .portal-container {
+        gap: 18px;
+    }
+
+    .portal-body {
+        padding: 23px 18px 27px;
+    }
+
+    .portal-icon {
+        font-size: 55px;
+    }
+
+    .quick-status form {
+        flex-direction: column;
+    }
+
+    .quick-status input {
+        width: 100%;
+
+        max-width: 310px;
+    }
+
+    .quick-status button {
+        width: 100%;
+
+        max-width: 310px;
+    }
+
+    .home-footer {
+        padding: 18px 20px;
+
+        flex-direction: column;
+
+        gap: 10px;
+
+        text-align: center;
+    }
+
+    .hidden-admin {
+        right: 10px;
+        bottom: 5px;
+
+        font-size: 11px;
+
+        padding: 6px 10px;
+    }
+
+}
